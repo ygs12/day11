@@ -44,6 +44,9 @@ public class TokenFilter extends ZuulFilter {
         HttpServletRequest request = context.getRequest();
         Cookie cookie = CookUtil.getCookieValue("token", request);
         // 获取地址栏传入的参数
+
+
+
         String token = null;
 
         if (null != cookie) {
